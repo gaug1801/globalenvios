@@ -4,38 +4,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global Envios</title>
     <link rel="stylesheet" href="style.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/sf-old-republic-2" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src='https://widgets.sociablekit.com/google-business-profile/widget.js' async defer></script>
+    
 </head>
 <body>
     <div class="container">
-        <div class="navbar">
-            <img src="images/logo2.png" class="logo">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="index.html">Calculadora de Envios</a></li>
-                    <li><a href="#contact">Contacto</a></li>
-                    <li><a href="https://globalenvios.multitrack.trackingpremium.us/tracking/tracking">Tracking</a></li>
-                </ul>
-            </nav>
-            <img src="images/menu.png" class="menu-icon">
-        </div>
-
+        <!--<div class="navbar"></div>-->
+        <nav>
+            <input type="checkbox" id="check" >
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <!--<img src="images/logo1.png" class="logo">-->
+            <label class="logo1">Global Envios</label>
+            <ul>
+                <li><a class="active" href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="index.html">Calculadora de Envios</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <li><a href="https://globalenvios.multitrack.trackingpremium.us/tracking/tracking">Tracking</a></li>
+            </ul>
+        </nav>
         <div class="row">
             <div class="col">
-                <h1>Global Envios Express</h1>
-                <p>Tu punto preferido para envios de cajas, dinero, y mucho mas!</p>
-                    <button type="button">Explore</button>
+                <h1>Envia tu paquete ahora!</h1>
+                <p>Envios de Caja, Dinero, Ayuda Legal, y mas</p>
+                    <button type="button"> <a href="#contact"> Contáctanos</a> </button>
             </div>
-            <div class="col">
+            <!--<div class="col">
                 <div class="card card1">
                     <h5>Envio de Cajas</h5>
                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                 </div>
                 <div class="card card2">
-                    <h5>Envio de Dinero</h5>
+                    <h5>Envios de Dinero</h5>
                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                 </div>
                 <div class="card card3">
@@ -46,12 +50,14 @@
                     <h5>Cobra tu cheque</h5>
                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                 </div>
-            </div>
+            </div>-->
         </div>
     </div>
-    <div id = "contact"class='sk-ww-google-business-profile' data-embed-id='234872'></div><script src='https://widgets.sociablekit.com/google-business-profile/widget.js' async defer></script>
-    <div class='sk-ww-google-business-profile' data-embed-id='234873'></div><script src='https://widgets.sociablekit.com/google-business-profile/widget.js' async defer></script>
-    <div class='sk-ww-google-business-profile' data-embed-id='234875'></div><script src='https://widgets.sociablekit.com/google-business-profile/widget.js' async defer></script>
+    <div class="contact-info">
+        <div id = "contact" class='sk-ww-google-business-profile' data-embed-id='234872'></div>
+        <div class='sk-ww-google-business-profile' data-embed-id='234873'></div>
+        <div class='sk-ww-google-business-profile' data-embed-id='234875'></div>
+    </div>
 </body>
 
 </html>
