@@ -12,6 +12,11 @@
 	margin-top: 25px;
 	font-family: merienda;
 }
+.logo { /*might be trash*/
+    height: 50px;
+    width: 100px;
+    display: block;
+}
 .carousel-caption p {
 	width: 60%;
 	margin: auto;
