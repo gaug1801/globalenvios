@@ -1,187 +1,210 @@
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
+.carousel-item {
+	height: 100vh;
+	min-height: 300px;
 }
-body {
-    font-family: 'SF Old Republic', sans-serif;
+.carousel-caption {
+	bottom: 220px;
+}
+.carousel-caption h5 {
+	font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 25px;
+	font-family: merienda;
+}
+.carousel-caption p {
+	width: 60%;
+	margin: auto;
+	font-size: 18px;
+	line-height: 1.9;
+	font-family: poppins;
+}
+.carousel-caption a {
+	text-transform: uppercase;
+	background: #262626;
+	padding: 10px 30px;
+	display: inline-block;
+	color: #fff;
+	margin-top: 15px;
+}
+.navbar-nav a {
+	font-family: poppins;
+	font-size: 18px;
+	/*text-transform: uppercase;*/
+	/*font-weight: bold;*/
 }
 nav{
-    height: 80px;
-    align-items: center;
-    background-color: transparent;
-    width: 100%;
+    background-image: linear-gradient(to right, #ea2a2a, #05395d);
+}
+.navbar-light .navbar-brand {
+	color: #fff;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+	color: #fff;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #fff;
+}
+.navbar-nav {
+	text-align: center;
+}
+.nav-link {
+	padding: .2rem 1rem;
+}
+.nav-link.active, .nav-link:focus {
+	color: #fff;
+}
+.navbar-toggler {
+	padding: 1px 5px;
+	font-size: 18px;
+	line-height: 0.3;
+	background: #fff;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	color: #fff;
+}
+.w-100 {
+	height: 100vh;
+}
+@media only screen and (max-width: 767px) {
+	.navbar-nav.ml-auto {
+		background: rgba(0, 0, 0, 0.5);
+	}
+	.navbar-nav a {
+		font-size: 14px;
+		font-weight: normal;
+	}
+}
+.navbar {
+    position: fixed; /* Fix the navbar to the top of the page */
+    top: 0; /* Align the top edge of the navbar with the top edge of the viewport */
+    left: 0; /* Align the left edge of the navbar with the left edge of the viewport */
+    width: 100%; /* Ensure the navbar stretches across the full width of the viewport */
+    z-index: 1000; /* Ensures the navbar stays on top of other page elements */
+    padding-left: 0;
+    padding-right: 0;
+    background-image: linear-gradient(to right, #ea2a2a, #05395d);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: Add shadow for better visibility over page content */
 }
 
-label.logo1 {
-    color: white;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 0px;
-    font-weight: bold;
+.services-section {
+    text-align: center;
+    padding: 50px 0;
 }
-nav ul {
-    float: right;
-    margin-right: 20px;
-}
-nav ul li {
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-}
-nav ul li a{
-    color: white;
-    font-size: 17px;
-    border-radius: 3px;
-    padding: 7px 13px;
-}
-a.active, a:hover{
-    text-shadow: 0 0 15px #ffff;
-    transition: 0.5s;
-}
-.checkbtn{
-    font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-} 
-#check{
-    display: none;
-}
-@media (max-width: 1100px) {
-    label.logo1 {
-        font-size: 30px;
-    }
-    nav ul li a{
-        font-size: 16px;
-    }
-} 
-@media (max-width: 974px) {
-    .checkbtn{
-        margin-top: 30px;
-        display: block;
-    }
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #2c3e50;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
-    nav ul li{
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-    nav ul li a{
-        font-size: 20px;
-    }
-    a:hover, a.active{
-        background: none;
-        color: #0082e6;
-    }
-    #check:checked ~ ul{
-        left: 0;
-    }
 
+.section-title {
+    font-size: 2.5em;
+    margin-bottom: 1em;
 }
-.container{
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(images/background1.png);
-    background-position: center;
-    background-size: cover;
-    padding-left: 5%;
-    padding-right: 5%;
-    box-sizing: border-box;
+
+.country-flags {
+    margin-bottom: 2em;
+    font-size: 1.2em;
 }
-button {
-    width: 180px;
-    color: #000;
-    font-size: 12px;
-    padding: 12px 0;
-    background: #fff;
-    border: 0;
-    border-radius: 20px;
-    outline: none;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-.logo{
-    height: 100px;
-    width: 100px;
-    background: #ffff;
-    border-radius: 20px;
-    border: 0;
-    cursor: pointer;
-    margin-left: 10px;
-    margin-top: 40px;
-}
-.menu-icon{
-    width: 30px;
-    cursor: pointer;
-    margin-left: 40px;
-}
-.row{
-    margin-top: 20px;
+
+.services-container {
     display: flex;
-    height: 88%;
-    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
-.col{
-    flex-basis: 50%;
-}
-h1{
-    color: #fff;
-    font-size: 100px;
-}
-p{
-    color: #fff;
-    font-size: 11px;
-    line-height: 15px;
-}
-.card{
-    width: 200px;
-    height: 230px;
-    display: inline-block;
+
+.service-card {
+    width: calc(25% - 30px);
+    margin: 15px;
+    text-align: center;
+    background: #f8f9fa;
+    padding: 20px;
     border-radius: 10px;
-    padding: 15px 25px;
-    box-sizing: border-box;
-    cursor: pointer;
-    margin: 10px 15px;
-    background-position: center;
-    background-size: cover;
-    transition: transform 0.5s
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-.card1 {
-    background-image: url(images/courier.png);
+
+.service-card h3 {
+    margin-top: 1em;
 }
-.card2 {
-    background-image: url(images/pic-2.png);
+
+.more-services {
+    display: inline-block;
+    margin-top: 30px;
+    background-color: #34b334;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
 }
-.card3 {
-    background-image: url(images/pic-3.png);
+
+.more-services:hover {
+    background-color: #2d992d;
 }
-.card4 {
-    background-image: url(images/pic-4.png);
+
+@media (max-width: 992px) {
+    .service-card {
+        width: calc(50% - 30px);
+    }
 }
-.card:hover {
-    transform: translateY(-10px);
+
+@media (max-width: 768px) {
+    .service-card {
+        width: 100%;
+        margin-top: 20px;
+    }
 }
-h5 {
-    color:#fff;
-    text-shadow: 0 0 5px #999;
-    text-transform: uppercase;
+.instagram-embed-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0; /* Adjust the margin as needed */
 }
-.card p {
-    text-shadow: 0 0 15px #000;
-    font-size: 8px;
+
+.instagram-media {
+    max-width: 540px; /* You can adjust this to fit the desired width */
+    width: 100%; /* This will make it responsive */
+    margin: auto; /* This centers the embed in the container div */
 }
+
+.footer {
+    background-image: linear-gradient(to right, #ea2a2a, #05395d); /* Adjust the color as needed */
+    color: white;
+    padding: 20px 0;
+  }
+  
+  .footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-section {
+    flex: 1;
+    padding: 0 20px; /* Adjust the padding as needed */
+  }
+  
+  .footer-section h5 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section p {
+    margin-bottom: 5px;
+  }
+  
+  .footer-section a {
+    color: white; /* Icon color */
+    margin-right: 10px; /* Space between icons */
+    font-size: 24px; /* Icon size */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .footer .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-section {
+      margin-bottom: 20px;
+    }
+  }
+  
