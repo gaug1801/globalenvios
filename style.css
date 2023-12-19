@@ -1,16 +1,12 @@
-.carousel-item {
-	height: 100vh;
-	min-height: 300px;
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
 }
-.carousel-caption {
-	bottom: 220px;
-}
-.carousel-caption h5 {
-	font-size: 45px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	margin-top: 25px;
-	font-family: merienda;
+body {
+    font-family: 'SF Old Republic', sans-serif;
 }
 .logo { /*might be trash*/
   height: 50px;
@@ -158,56 +154,53 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px 0; /* Adjust the margin as needed */
 }
-
-.instagram-media {
-    max-width: 540px; /* You can adjust this to fit the desired width */
-    width: 100%; /* This will make it responsive */
-    margin: auto; /* This centers the embed in the container div */
+.col{
+    flex-basis: 50%;
 }
-
-.footer {
-    background-image: linear-gradient(to right, #ea2a2a, #05395d); /* Adjust the color as needed */
-    color: white;
-    padding: 20px 0;
-  }
-  
-  .footer .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .footer-section {
-    flex: 1;
-    padding: 0 20px; /* Adjust the padding as needed */
-  }
-  
-  .footer-section h5 {
-    margin-bottom: 10px;
-  }
-  
-  .footer-section p {
-    margin-bottom: 5px;
-  }
-  
-  .footer-section a {
-    color: white; /* Icon color */
-    margin-right: 10px; /* Space between icons */
-    font-size: 24px; /* Icon size */
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .footer .container {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .footer-section {
-      margin-bottom: 20px;
-    }
-  }
-
-  
+h1{
+    color: #fff;
+    font-size: 100px;
+}
+p{
+    color: #fff;
+    font-size: 11px;
+    line-height: 15px;
+}
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s
+}
+.card1 {
+    background-image: url(images/courier.png);
+}
+.card2 {
+    background-image: url(images/pic-2.png);
+}
+.card3 {
+    background-image: url(images/pic-3.png);
+}
+.card4 {
+    background-image: url(images/pic-4.png);
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+h5 {
+    color:#fff;
+    text-shadow: 0 0 5px #999;
+    text-transform: uppercase;
+}
+.card p {
+    text-shadow: 0 0 15px #000;
+    font-size: 8px;
+}
