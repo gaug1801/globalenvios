@@ -142,11 +142,10 @@ img.logo {
     background-image: linear-gradient(to right, #ea2a2a, #05395d);
     box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: Add shadow for better visibility over page content */
 }
-/* adjust menu list padding*/
+/* adjust menu options padding*/
 ul.navbar-nav.ml-auto{
   padding-right: 50px;
 }
-
 /* END NAV BAR */
 
 /* SERVICES */
@@ -178,7 +177,7 @@ ul.navbar-nav.ml-auto{
     background: #f8f9fa;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /*TODO: REMOVE WHEN CAROUSEL GRADIENT IS IMPLEMENTED*/
 }
 
 .service-card h3 {
@@ -188,15 +187,15 @@ ul.navbar-nav.ml-auto{
 .more-services {
     display: inline-block;
     margin-top: 30px;
-    background-color: #34b334;
+    background-image: linear-gradient(to right, #ea2a2a, #05395d); /* Adjust the color as needed */
     color: white;
+    
     padding: 10px 25px;
     border-radius: 20px;
     transition: background-color 0.3s;
 }
-
 .more-services:hover {
-    background-color: #2d992d;
+    background-color: #05395d;
 }
 
 @media (max-width: 992px) {
@@ -211,23 +210,7 @@ ul.navbar-nav.ml-auto{
         margin-top: 20px;
     }
 }
-
 /* END SERVICES */
-
-/* INSTAGRAM */
-.instagram-embed-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 50px 0; /* Adjust the margin as needed */
-}
-
-.instagram-media {
-    max-width: 540px; /* You can adjust this to fit the desired width */
-    width: 100%; /* This will make it responsive */
-    margin: auto; /* This centers the embed in the container div */
-}
-/* END INSTAGRAM */
 
 /* FOOTER */
 .footer { 
@@ -273,4 +256,3 @@ ul.navbar-nav.ml-auto{
     }
   }  
   /* END FOOTER */
-  
