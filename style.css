@@ -48,54 +48,9 @@ a {
 }
 /* END FONTS */
 
-/* CAROUSEL */
-.carousel-item {
-	height: 100vh;
-	min-height: 300px;
-  position: relative;
-}
-.carousel-caption {
-	bottom: 220px;
-}
-.carousel-caption h5 {
-	font-size: 45px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	margin-top: 25px;
-}
-.carousel-caption p {
-	width: 60%;
-	margin: auto;
-	font-size: 18px;
-	line-height: 1.9;
-  position: relative;
-  z-index: 2; /* This ensures the caption is above the gradient overlay */
-}
-.carousel-caption a {
-	text-transform: uppercase;
-	background: #262626;
-	padding: 10px 30px;
-	display: inline-block;
-	color: #fff;
-	margin-top: 15px;
-}
-.carousel-gradient-overlay::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(to right, 
-                                  rgba(234, 42, 42, 0.5), /* 50% transparency */
-                                  rgba(5, 57, 93, 0.5)); /* 50% transparency */
-
-  z-index: 1; /* Ensure it's above the image but below the text */
-}
-/* END CAROUSEL*/
-
 /* NAV BAR */
 img.logo {
+  padding-top: 10px;
   height: 77px;
   width: 370px;
   display: block;
@@ -163,6 +118,51 @@ ul.navbar-nav.ml-auto{
   padding-right: 50px;
 }
 /* END NAV BAR */
+
+/* CAROUSEL */
+.carousel-item {
+	height: 100vh;
+	min-height: 300px;
+  position: relative;
+}
+.carousel-caption {
+	bottom: 220px;
+}
+.carousel-caption h5 {
+	font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 25px;
+}
+.carousel-caption p {
+	width: 60%;
+	margin: auto;
+	font-size: 18px;
+	line-height: 1.9;
+  position: relative;
+}
+.carousel-caption a {
+	text-transform: uppercase;
+	background: #262626;
+	padding: 10px 30px;
+	display: inline-block;
+	color: #fff;
+	margin-top: 15px;
+}
+.carousel-gradient-overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, 
+                                  rgba(234, 42, 42, 0.5), /* 50% transparency */
+                                  rgba(5, 57, 93, 0.5)); /* 50% transparency */
+
+  z-index: 1; /* Ensure it's above the image but below the text */
+}
+/* END CAROUSEL*/
 
 /* SERVICES */
 .services-section {
