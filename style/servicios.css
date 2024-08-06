@@ -1,0 +1,145 @@
+body {
+  background-color: rgb(246, 244, 244);
+  margin: 0;
+  padding: 0;
+}
+.background-container {
+  background-image: url(background-images/aurora-background.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 65vh;
+}
+.background-overlay  {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: linear-gradient(to right, #ea2a2a, #05395d);
+  opacity: 0.5;
+}
+.title-container {
+  font-family: Arial;
+  position: absolute;
+  color: white;
+  top: 100px;
+  left: 50px;
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.title-text {
+  font-size: 72px;
+  width: 435px;
+  font-weight: bolder;
+  margin-bottom: 15px;
+}
+.subtitle-container {
+  display: flex;
+}
+.subtitle-container-inner {
+  display: flex;
+  margin-right: 25px;
+  font-weight: 500;
+}
+.subtitle-text {
+  font-size: 24px;
+  margin-top: 0;
+}
+.flags-subtitle {
+  display: flex;
+  flex: 1;
+}
+.flags-subtitle div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.flags-subtitle img {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+.flags-subtitle span {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.services-container {
+  width: 100vw;
+  font-family: Arial;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.service-row-container {
+  display: flex;
+  padding: 0 50px 0px 50px;
+}
+.service-image-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service-image-container img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+.service-row-body {
+  flex-direction: column;
+  flex: 1;
+  padding: 50px 0 50px 50px;
+}
+.service-row-body h2 {
+  font-size: 50px;
+  color: #ea2a2a;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.break {
+  width: 60px;
+  height: 2px;
+  background-color: #05395d;
+  margin-bottom: 20px;
+}
+.services-text-container {
+  display: flex;
+}
+.services-text {
+  flex: 1;
+  margin-top: 10px;
+  line-height: 1.5;
+  font-size: 18px;
+  margin-right: 100px;
+  color: rgb(63, 63, 63);
+  
+}
+.service-row-body-2 {
+  flex-direction: column;
+  flex: 1;
+  padding: 50px 50px 50px 0;
+}
+.service-row-body-2 h2 {
+  font-size: 50px;
+  color: #ea2a2a;
+  margin: 0;
+  margin-bottom: 20px;
+}
+@media (max-width: 750px) {
+  .subtitle-container {
+    flex-direction: column;
+  }
+  .background-container,
+  .background-overlay {
+    height: 75vh;
+  }
+  .service-row-container {
+    flex-direction: column;
+  }
+  .service-row-body,
+  .service-row-body-2 {
+    padding: 30px 0 50px 0;
+  }
+}
