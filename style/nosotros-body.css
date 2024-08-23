@@ -1,0 +1,128 @@
+body {
+  background-color: rgb(246, 244, 244);;
+}
+.background-container {
+  background-image: url(background-images/aurora-background.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  width: 100vw;
+  height: 65vh;
+}
+.background-overlay  {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: linear-gradient(to right, #ea2a2a, #05395d);
+  opacity: 0.5;
+}
+.title-container {
+  font-family: Arial;
+  position: absolute;
+  color: white;
+  top: 100px;
+  left: 50px;
+}
+.title-text {
+  font-size: 72px;
+  width: 435px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.subtitle-text {
+  font-size: 20px;
+}
+.nosotros-container {
+  font-family: Arial;
+  padding: 80px 50px;
+}
+.nosotros-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.nosotros-title-container {
+  display: flex;
+  justify-content: start;
+}
+.nosotros-title {
+  color: #05395d;
+  font-size: 40px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+.nosotros-body-1 {
+  margin-bottom: 20px;
+  color: #05395d;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.nosotros-body-2 {
+  color: rgb(47, 47, 47);
+  margin-bottom: 20px;
+}
+.mission-container {
+  display: flex;
+  font-family: Arial;
+  padding: 100px 30px;
+}
+.mission-vision-container {
+  display: flex;
+  flex-direction: column;
+  width: 61%;
+  padding: 30px 30px;
+}
+.our-values-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 30px;
+  flex: 1;
+}
+.our-values-container p {
+  margin: 8px 0;
+  cursor: pointer;
+}
+.our-values-container span  {
+  margin-right: 10px;
+  font-size: 20px;
+  color: ea2a2a;
+}
+.our-values-container p:hover {
+  color: #ea2a2a;
+  .our-values-container span {
+    color: #a31d1d;
+  }
+}
+.breaker {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  width: 20px;
+  background-color: #ea2a2a;
+  height: 2px;
+}
+.our-mission-title,
+.our-vision-title, 
+.our-values-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #05395d;
+  margin-bottom: 8px;
+}
+.our-values-title {
+  width: 100%;
+}
+.our-mission-body,
+.our-vision-body {
+  color: rgb(47, 47, 47);
+  line-height: 2;
+  margin-top: 5px;
+}
+.our-values-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
