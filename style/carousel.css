@@ -61,6 +61,9 @@
   font-weight: 500;
   font-style: italic;
 }
+.carousel-indicators {
+  opacity: 0;
+}
 
 @media (max-width: 770px) {
   .carousel-caption {
