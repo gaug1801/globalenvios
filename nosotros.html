@@ -1,16 +1,3 @@
-<?php   
-  if (!isset($_SESSION["form_submitted"])) {
-    unset($_SESSION["zip"]);
-    unset($_SESSION["venezuela-cities"]);
-    unset($_SESSION["length"]);
-    unset($_SESSION["width"]);
-    unset($_SESSION["height"]);
-    unset($_SESSION["weight"]);
-  } else {
-    unset($_SESSION["form_submitted"]); // Reset the flag
-  }
-?>
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -22,7 +9,35 @@
   <body style="padding: 0; margin: 0;">
     <div class="background-container">
       <div class="background-overlay"></div>
-     <?php include("header.html");?>
+      <div class="header" id="navBar">
+        <div class="logo-container">
+          <a href="index.html"><img class="header-logo" src="images/logo-white.png" alt=""></a>
+        </div>
+        <div class="header-menu-row">
+           <a href="index.html"><button class="header-menu-option"><span>Inicio</span></button></a>
+           <a href="nosotros.html"><button class="header-menu-option">Nosotros</button></a>
+           <a href="servicios.html"><button class="header-menu-option">Servicios</button></a>
+           <div class="dropdown">
+            <button class="dropbtn">Calculadora de Envíos</button>
+              <div class="dropdown-content">
+                <a href="#">En desarollo</a>
+              </div>
+          </div>
+           <a href="contacto.html"><button class="header-menu-option">Contacto</button></a>
+           <a href="https://globalenvios.multitrack.trackingpremium.us/tracking/tracking" target="_blank" rel="noopener noreferrer"><button class="header-menu-option">Tracking</button></a>
+           <i class="bx bx-menu" id="btn"></i>
+        </div>
+        <div id="myModal" class="modal">
+          <div class="dropdown-menu">
+            <div class="dropdown-menu-row"><a href="index.html">Inicio</a></div>
+            <div class="dropdown-menu-row"><a href="nosotros.html">Nosotros</a></div>
+            <div class="dropdown-menu-row"><a href="servicios.html">Servicios</a></div>
+            <div class="dropdown-menu-row"><a href="shipping-calculator.html">Calculadora de Envios</a></div>
+            <div class="dropdown-menu-row"><a href="contacto.html">Contacto</a></div>
+            <div class="dropdown-menu-row"><a href="https://globalenvios.multitrack.trackingpremium.us/tracking/tracking">Tracking</a></div>
+          </div>
+        </div>
+      </div>
 
       <div class="title-container">
         <p class="title-text">ACERCA DE NOSOTROS</p>
@@ -73,6 +88,43 @@
       </div>
     </div>
   </body>
+
+  <footer class="footer">
+  
+    <div class="container">
+      <div class="footer-section">
+        <h5>llámanos</h5>
+        <div class="call-row">
+          <i class='bx bxs-phone'></i></i><p>+1 612-353-4189</p>
+        </div>
+        <div class="call-row">
+          <i class='bx bxs-phone'></i><p>+1 612-234-0480</p>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h5>dirección</h5>
+        <p>323 E Lake St, Minneapolis, MN, 55407, Unites States</p>
+        <p>6722 Penn Ave S, Richfield, MN, 55423, United States</p>
+      </div>
+      <div class="footer-section">
+        <h5>ponte en contacto</h5>
+        <div class="contact-row">
+          <a href="https://www.instagram.com/globalenviospaqueteria" target="_blank"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.facebook.com/" target="_blank"><i class="bx bxl-facebook-circle"></i></a>
+          <a href="https://www.whatsapp.com/" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+        </div>
+        <div class="email-row">
+          <i class='bx bx-envelope'></i>
+          <p>globalenviosxp@gmail.com</p>
+        </div>
+      </div>
+      
+    </div>
+    <div class="signature-container">
+      <div class="copyright">Copyright &copy; 2024 Global Envíos - Lee nuestra <a href="#">Politica de Privacidad</a>.</div>
+      <div class="signature">Diseñado by Gabriel Augustín</div>
+    </div>
+</footer>
 </html>
 
-<?php include("footer.html");?>
+<script src="js/dropdown-menu.js"></script>

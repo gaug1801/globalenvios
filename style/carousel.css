@@ -16,10 +16,11 @@
 }
 .carousel-item #carousel-image {
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  object-fit: cover;
 }
 .carousel-caption {
-	bottom: 300px;
+	bottom: 200px;
 }
 .carousel-caption h5 {
 	font-size: 72px;
@@ -59,4 +60,20 @@
   cursor: pointer;
   font-weight: 500;
   font-style: italic;
+}
+.carousel-indicators {
+  opacity: 0;
+}
+
+@media (max-width: 770px) {
+  .carousel-caption {
+    bottom: 200px;
+  }
+  .carousel-caption h5 {
+    font-size: 55px;
+  }
+
+  .carousel-item button {
+    font-size: 21px;
+  }
 }
