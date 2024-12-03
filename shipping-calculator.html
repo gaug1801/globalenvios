@@ -58,9 +58,9 @@
     <div class="calculator-container">
       <div class="calculator-container-inner">
           <div class="progress-container">
-            <div class="current-step">1</div>
+            <div id="step-one" class="current-step">1</div>
             <div class="progress-line"></div>
-            <div class="next-step">2</div>
+            <div id="step-two" class="next-step">2</div>
           </div>
           <div class="calculator-step-one">
             <div class="instructions-container">
@@ -81,8 +81,8 @@
               <div class="input-container-row">
                 <div class="destination-input">
                   <span>Ciudad de Venezuela</span>
-                  <select name="venezuela-cities" id="venezuela-cities" required>
-                  <option value="default">Elija una ciudad</option>
+                  <select class="js-city-input" name="venezuela-cities" id="venezuela-cities" required>
+                    <option value="default">Elija una ciudad</option>
                     <option value="puerto-cabello">Puerto Cabello</option>
                     <option value="valencia">Valencia</option>
                     <option value="caracas">Caracas</option>
@@ -126,6 +126,43 @@
           </div>
       </div>
     </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-section">
+          <h5>llámanos</h5>
+          <div class="call-row">
+            <i class='bx bxs-phone'></i></i><p>+1 612-353-4189</p>
+          </div>
+          <div class="call-row">
+            <i class='bx bxs-phone'></i><p>+1 612-234-0480</p>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h5>dirección</h5>
+          <p>323 E Lake St, Minneapolis, MN, 55407, Unites States</p>
+          <p>6722 Penn Ave S, Richfield, MN, 55423, United States</p>
+        </div>
+        <div class="footer-section">
+          <h5>ponte en contacto</h5>
+          <div class="contact-row">
+            <a href="https://www.instagram.com/globalenviospaqueteria" target="_blank"><i class="bx bxl-instagram"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="bx bxl-facebook-circle"></i></a>
+            <a href="https://www.whatsapp.com/" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+          </div>
+          <div class="email-row">
+            <i class='bx bx-envelope'></i>
+            <p>globalenviosxp@gmail.com</p>
+          </div>
+        </div>
+        
+      </div>
+      <div class="signature-container">
+        <div class="copyright">Copyright &copy; 2024 Global Envíos - Lee nuestra <a href="#">Politica de Privacidad</a>.</div>
+        <div class="signature">Diseñado by Gabriel Augustín</div>
+      </div>
+      
+  </footer>
   </body>
   <script type="module" src="js/shipping-calculator.js"></script>
 </html>
