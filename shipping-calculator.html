@@ -55,74 +55,77 @@
       </div>
     </div>
 
-    <form action="shipping-calculator.html" method="post" class="calculator-container">
+    <div class="calculator-container">
       <div class="calculator-container-inner">
           <div class="progress-container">
             <div class="current-step">1</div>
             <div class="progress-line"></div>
             <div class="next-step">2</div>
           </div>
-          <div class="instructions-container">
-            <p class="instruction">Ingresa todos los datos solicitados a continuación:</p>
-          </div>
-       
-          <div class="origin-container">
-            <div class="origin-title"><h4>ORIGEN <img src="icons/us.svg" alt=""></h4></div>
-            <div class="input-container-row">
-              <div class="origin-input">
-                <span>Código Postal (USA)</span>
-                <input name="zip" type="text" required>
+          <div class="calculator-step-one">
+            <div class="instructions-container">
+              <p class="instruction">Ingresa todos los datos solicitados a continuación:</p>
+            </div>
+        
+            <div class="origin-container">
+              <div class="origin-title"><h4>ORIGEN <img src="icons/us.svg" alt=""></h4></div>
+              <div class="input-container-row">
+                <div class="origin-input">
+                  <span>Código Postal (USA)</span>
+                  <input class="js-zip-input" name="zip" type="text" required>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="destination-container">
-            <div class="destination-title"> <h4>DESTINO <img src="icons/venezuela.svg" alt=""></h4></div>
-            <div class="input-container-row">
-              <div class="destination-input">
-                <span>Ciudad de Venezuela</span>
-                <select name="venezuela-cities" id="venezuela-cities" required>
-                <option value="default">Elija una ciudad</option>
-                  <option value="puerto-cabello">Puerto Cabello</option>
-                  <option value="valencia">Valencia</option>
-                  <option value="caracas">Caracas</option>
-                  <option value="la-guaira">La Guaira</option>
-                  <option value="merida">Mérida</option>
-                  <option value="puerto-la-cruz">Puerto La Cruz</option>
-                  <option value="barquisimeto">Barquisimeto</option>
-                  <option value="maracaibo">Maracaibo</option>
-                </select>
+            <div class="destination-container">
+              <div class="destination-title"> <h4>DESTINO <img src="icons/venezuela.svg" alt=""></h4></div>
+              <div class="input-container-row">
+                <div class="destination-input">
+                  <span>Ciudad de Venezuela</span>
+                  <select name="venezuela-cities" id="venezuela-cities" required>
+                  <option value="default">Elija una ciudad</option>
+                    <option value="puerto-cabello">Puerto Cabello</option>
+                    <option value="valencia">Valencia</option>
+                    <option value="caracas">Caracas</option>
+                    <option value="la-guaira">La Guaira</option>
+                    <option value="merida">Mérida</option>
+                    <option value="puerto-la-cruz">Puerto La Cruz</option>
+                    <option value="barquisimeto">Barquisimeto</option>
+                    <option value="maracaibo">Maracaibo</option>
+                  </select>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="dimensions-container">
-            <div class="dimensions-title"> <h4>DIMENSIONES</h4></div>
-            <div class="dimensions-row">
-              <div class="dimensions">
-                <span>Alto (Pulgadas)</span>
-                <input name="height" type="number" required>
-              </div>
-              <div class="dimensions">
-                <span>Largo (Pulgadas)</span>
-                <input name="length" type="number" required>
-              </div>
-              <div class="dimensions">
-                <span>Ancho (Pulgadas)</span>
-                <input name="width" type="number" required>
+            <div class="dimensions-container">
+              <div class="dimensions-title"> <h4>DIMENSIONES</h4></div>
+              <div class="dimensions-row">
+                <div class="dimensions">
+                  <span>Alto (Pulgadas)</span>
+                  <input class="js-height-input" name="height" type="number" required>
+                </div>
+                <div class="dimensions">
+                  <span>Largo (Pulgadas)</span>
+                  <input class="js-length-input" name="length" type="number" required>
+                </div>
+                <div class="dimensions">
+                  <span>Ancho (Pulgadas)</span>
+                  <input class="js-width-input" name="width" type="number" required>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="weight-container">
-            <div class="weight-title"> <h4>PESO</h4></div>
-            <div class="weight-input-container">
-              <span>Peso en libras</span>
-              <input name="weight" type="number" required>
+            <div class="weight-container">
+              <div class="weight-title"> <h4>PESO</h4></div>
+              <div class="weight-input-container">
+                <span>Peso en libras</span>
+                <input class="js-weight-input" name="weight" type="number" required>
+              </div>
             </div>
-          </div>
+          </div>  
           <div class="button-container">
-            <button type="submit" name="submit" class="next-button">siguiente</button>
+            <button class="prev-button js-prev-button">anterior</button>
+            <button type="submit" name="submit" class="next-button js-next-button">siguiente</button>
           </div>
       </div>
-    </form>
+    </div>
   </body>
-  <script src="js/shipping-calculator.js"></script>
+  <script type="module" src="js/shipping-calculator.js"></script>
 </html>

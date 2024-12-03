@@ -223,6 +223,7 @@ body {
   border-radius: 56px;
   transition: padding 0.15s;
   cursor: pointer;
+  display: none;
 }
 .button-row {
   margin-top: 10px;
@@ -230,4 +231,7 @@ body {
 .result-row {
   padding-bottom: 10px;
   border-bottom: white 1px solid;
+}
+.is-visible {
+  display: inline-block;
 }
