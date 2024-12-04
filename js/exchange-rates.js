@@ -1,3 +1,7 @@
+/*
+  Exchange Rate API documentation: https://www.exchangerate-api.com/docs/supported-currencies
+*/
+
 function fetchExchangeRates() {
   document.addEventListener('DOMContentLoaded', () => {
     const apiUrl = 'https://v6.exchangerate-api.com/v6/4029fdad655123860efffc6d/latest/USD';
