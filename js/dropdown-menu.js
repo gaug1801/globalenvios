@@ -14,9 +14,3 @@ btn.onclick = function() {
     btn.classList.add('bx-menu') 
   }
 }
-
-/*
-  GOAL: Change the menu icon to an X when modal is toggled active.
-
-  How does 'active' work? It's probably a 
-*/
