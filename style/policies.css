@@ -1,0 +1,17 @@
+.title-text {
+  font-family: Arial;
+  position: absolute;
+  color: white;
+  margin: 8rem 0 0 4rem;
+  width: 78%;
+  font-size: 3.5rem;
+}
+.policies-container {
+  margin: 2rem 5rem;
+}
+.policies-body { 
+  font-size: 0.85rem;
+  line-height: 2;
+  color: rgb(83, 83, 83);
+  font-family: Arial, Helvetica, sans-serif;
+}
