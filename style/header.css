@@ -175,7 +175,7 @@ a, button {
     width: 200px;
   }
   .header-menu-option {
-    opacity: 0;
+    display: none;
     font-size: 0.5px;
   }
   .dropbtn {
