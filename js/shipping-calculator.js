@@ -1,8 +1,3 @@
-import {formatCurrency} from "./utils/money.js";
-
-//TODO: Transfer to own file & import
-const volumeConstantCents = 178200;
-const vzlaPricePerFootCents = 3300;
 const previousButtonElement = document.querySelector('.js-prev-button');
 const nextButtonElement = document.querySelector('.js-next-button');
 let isCalcRendered = true;
@@ -16,6 +11,8 @@ previousButtonElement.addEventListener('click', ()=> {
   renderCalc();
   isCalcRendered = true;
 });
+
+renderDestinationFlag();
 
 document.querySelector('.body').addEventListener('keydown', (event)=> {
   if (event.key === 'Enter') {
@@ -41,22 +38,34 @@ function renderCalcResults() {
   
     //  Store data
     let zip = document.querySelector('.js-zip-input').value;
-    let height = document.querySelector('.js-height-input').value;
-    let length = document.querySelector('.js-length-input').value;
-    let width = document.querySelector('.js-width-input').value;
+    let dimensions = document.querySelector('.js-dimensions-input').value;
     let weight = document.querySelector('.js-weight-input').value;
-    let city = document.querySelector('.js-city-input').value;
-    let boxVolume = (length * width * height);
-  
-    let boxPrice = formatCurrency(((boxVolume * 100) / volumeConstantCents) * vzlaPricePerFootCents);
+    let country = document.querySelector('.js-country-input').value;
+    
+    let boxPrice = 0;
+
+    switch (dimensions) {
+      case 'small':
+        boxPrice = 138;
+        break;
+      case 'medium':
+        boxPrice = 177;
+        break;
+      case 'large':
+        boxPrice = 231;
+        break;
+      case 'extra-large':
+        boxPrice = 299;
+        break;
+      default:
+        boxPrice = 0;
+    }
   
     //  Store data into localStorage
     localStorage.setItem('zip', JSON.stringify(zip));
-    localStorage.setItem('height', JSON.stringify(height));
-    localStorage.setItem('length', JSON.stringify(length));
-    localStorage.setItem('width', JSON.stringify(width));
+    localStorage.setItem('dimensions', JSON.stringify(dimensions));
     localStorage.setItem('weight', JSON.stringify(weight));
-    localStorage.setItem('city', JSON.stringify(city));
+    localStorage.setItem('country', JSON.stringify(country));
   
     //  Generate HTML
     let html = 
@@ -100,11 +109,48 @@ function renderCalc() {
   //Display previous values
   document.querySelector('.calculator-step-one').innerHTML 
     = convertObjectToString(('previous-html'));
-  document.querySelector('.js-city-input').value= convertObjectToString('city');
   document.querySelector('.js-zip-input').value = convertObjectToString('zip');
-  document.querySelector('.js-height-input').value = convertObjectToString('height');
-  document.querySelector('.js-length-input').value = convertObjectToString('length');
-  document.querySelector('.js-width-input').value = convertObjectToString('width');
+  document.querySelector('.js-dimensions-input').value = convertObjectToString('dimensions');
   document.querySelector('.js-weight-input').value = convertObjectToString('weight');
-  document.querySelector('.js-city-input').value = convertObjectToString('city');
+  document.querySelector('.js-country-input').value = convertObjectToString('country');
+  renderDestinationFlag();
+}
+
+function renderDestinationFlag() {
+  document.querySelector('.js-country-input').addEventListener('input', ()=> {
+    let flag = document.querySelector('.js-dest-flag');
+    let country = document.querySelector('.js-country-input');
+  
+    switch(country.value) {
+      case 'venezuela':
+        flag.src = `icons/${country.value}.svg`;
+        break;
+      case 'colombia':
+        flag.src = `icons/${country.value}.svg`;
+        break;
+      case 'mexico':
+        flag.src = `icons/${country.value}.svg`;
+        break;
+      case 'peru':
+        flag.src = `icons/${country.value}.svg`;
+        break;
+      case 'ecuador':
+        flag.src = `icons/${country.value}.svg`;
+        break;
+      case 'el-salvador':
+        flag.src = `icons/${country.value}.svg`;
+        break;
+      case 'guatemala':
+        flag.src = `icons/${country.value}.svg`;
+        break;
+      case 'dominican-republic':
+        flag.src = `icons/${country.value}.svg`;
+        break;
+      case 'honduras':
+        flag.src = `icons/${country.value}.svg`;
+        break;
+      default:
+        flag.src = '';
+    }
+  });
 }

@@ -121,8 +121,8 @@ body {
   width: 300px;
   margin-right: 20px;
 }
-.origin-title img,
-.destination-title img {
+.origin-image,
+.dest-flag {
   width: 30px;
   height: 20px;
   margin-left: 18px;
@@ -157,7 +157,8 @@ body {
   font-size: 14px;
   border: 1px solid rgb(75, 79, 88);
 }
-.destination-input select {
+.country-input,
+.dimensions-input {
   height: 34px;
   font-size: 14px;
   width: 250px;
@@ -167,6 +168,8 @@ body {
 }
 .dimensions {
   margin-right: 15px;
+  display: flex;
+  flex-direction: column;
 }
 .dimensions input,
 .weight-input-container input {

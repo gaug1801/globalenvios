@@ -64,7 +64,7 @@
             </div>
         
             <div class="origin-container">
-              <div class="origin-title"><h4>ORIGEN <img src="icons/us.svg" alt=""></h4></div>
+              <div class="origin-title"><h4>ORIGEN <img class="origin-image" src="icons/us.svg" alt=""></h4></div>
               <div class="input-container-row">
                 <div class="origin-input">
                   <span>Código Postal (USA)</span>
@@ -73,20 +73,22 @@
               </div>
             </div>
             <div class="destination-container">
-              <div class="destination-title"> <h4>DESTINO <img src="icons/venezuela.svg" alt=""></h4></div>
+              <div class="destination-title"> <h4>DESTINO <img class="dest-flag js-dest-flag" src="" alt=""></h4></div>
               <div class="input-container-row">
                 <div class="destination-input">
-                  <span>Ciudad de Venezuela</span>
-                  <select class="city-input js-city-input" name="venezuela-cities" id="venezuela-cities" required>
-                    <option value="default">Elija una ciudad</option>
-                    <option value="puerto-cabello">Puerto Cabello</option>
-                    <option value="valencia">Valencia</option>
-                    <option value="caracas">Caracas</option>
-                    <option value="la-guaira">La Guaira</option>
-                    <option value="merida">Mérida</option>
-                    <option value="puerto-la-cruz">Puerto La Cruz</option>
-                    <option value="barquisimeto">Barquisimeto</option>
-                    <option value="maracaibo">Maracaibo</option>
+                  <span>País de Destino</span>
+                  <!-- <select class="city-input js-city-input" name="venezuela-cities" id="venezuela-cities" required> -->
+                  <select class="country-input js-country-input" name="destination-countries" id="destination-countries" required>
+                    <option value="default">Elija un país</option>
+                    <option value="venezuela">Venezuela</option>
+                    <option value="colombia">Colombia</option>
+                    <option value="mexico">México</option>
+                    <option value="ecuador">Ecuador</option>
+                    <option value="peru">Perú</option>
+                    <option value="el-salvador">El Salvador</option>
+                    <option value="guatemala">Guatemala</option>
+                    <option value="dominican-republic">Republica Dominicana</option>
+                    <option value="honduras">Honduras</option>
                   </select>
                 </div>
               </div>
@@ -95,16 +97,14 @@
               <div class="dimensions-title"> <h4>DIMENSIONES</h4></div>
               <div class="dimensions-row">
                 <div class="dimensions">
-                  <span>Alto (Pulgadas)</span>
-                  <input class="js-height-input" name="height" type="number" required>
-                </div>
-                <div class="dimensions">
-                  <span>Largo (Pulgadas)</span>
-                  <input class="js-length-input" name="length" type="number" required>
-                </div>
-                <div class="dimensions">
-                  <span>Ancho (Pulgadas)</span>
-                  <input class="js-width-input" name="width" type="number" required>
+                  <span>Dimensiones de caja en pulgadas: </span>
+                  <select class="dimensions-input js-dimensions-input" name="box-dimensions" id="box-dimensions" required>
+                    <option value="default">Elija el tamaño de su caja</option>
+                    <option value="small">Pequeña (16x12x12)</option>
+                    <option value="medium">Mediana (18x18x16)</option>
+                    <option value="large">Grande (18x18x24)</option>
+                    <option value="extra-large">Extra Grande (22x22x22)</option>
+                  </select>
                 </div>
               </div>
             </div>
