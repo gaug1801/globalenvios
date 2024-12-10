@@ -1,3 +1,0 @@
-# global-envios-2
-This is the second version of Global Envios Express' Website. This version is a separate project, started from scratch. The goal is to learn about creating a website from scratch, picking up necessary web development skills along the way. The reason why a second version of the website was built is because this version implements many concepts and better understanding of the syntax, tools, and structure of HTML, CSS, PHP, and JavaScript.
-Author: Gabriel Augustin

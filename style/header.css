@@ -6,7 +6,6 @@ a, button {
   border: none;
   background-color: transparent;
   transition: text-shadow 0.1s;
-  font-size: 16px;
   padding: 0 8px;
 }
 .dropdown {
@@ -55,7 +54,7 @@ a, button {
 }
 .header-menu-option {
   flex: 1;
-  font-size: 16px;
+  font-size: 1.1rem;
   padding: 0 8px;
   background-color: transparent;
   border: none;
@@ -75,6 +74,7 @@ a, button {
 }
 .header-logo {
   width: 250px;
+  transition: font-size 0.15s;
 }
 .header #btn:active {
   box-shadow: 0 0 12px rgba(255, 255, 255, 0.25);
@@ -82,9 +82,9 @@ a, button {
 .small-logo {
   width: 40px;
 }
-.bx.bx-menu {
+.dropdown-button {
   color: white;
-  font-size: 2.0rem;
+  font-size: 2.2rem;
   border-style: solid;
   border-width: 1px;
   border-color: white;
@@ -100,7 +100,7 @@ a, button {
 
 .bx.bx-x {
   color: white;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   border-style: solid;
   border-width: 1px;
   border-color: white;
@@ -169,13 +169,13 @@ a, button {
   background-color: rgb(0,0,0);
   background-color: rgba(0,0,0,0.4);
 }
-@media (max-width: 850px) {
+@media (max-width: 900px) {
   .header-logo {
-     padding-left: -20px;
-      width: 150px;
+    padding-left: -20px;
+    width: 200px;
   }
   .header-menu-option {
-    opacity: 0;
+    display: none;
     font-size: 0.5px;
   }
   .dropbtn {
@@ -200,3 +200,9 @@ a, button {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+@media (max-width: 1000px) {
+  .header-menu-option {
+    font-size: 1rem;
+  }
+}
+
